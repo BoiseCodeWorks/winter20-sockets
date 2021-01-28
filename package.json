@@ -1,0 +1,16 @@
+
+  {
+    "name": "vbay",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:client && npm run setup:server && npm run build:client",
+      "setup:client": "cd vbay.client && npm i",
+      "setup:server": "cd vbay.server && npm i",
+      "build:client": "npm run --prefix vbay.client build",
+      "start": "node vbay.server/index.js"
+    },
+    "engines": {
+      "node": "^14.15.4"
+    }
+  }
+  
